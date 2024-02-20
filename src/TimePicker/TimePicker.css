@@ -1,0 +1,25 @@
+.time-picker {
+    position: relative;
+  }
+  
+  .time-options {
+    position: absolute;
+    top: calc(100% + 5px); /* Adjust as needed */
+    left: 0;
+    width: auto; /* Adjusted to match input text width */
+    z-index: 1000; /* Ensure it appears above other content */
+    background-color: #fff; /* Optional, adjust as needed */
+    border: 1px solid #ccc; /* Optional, adjust as needed */
+    border-radius: 4px; /* Optional, adjust as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional, adjust as needed */
+  }
+  
+  .time-options option {
+    padding: 8px 12px; /* Optional, adjust as needed */
+    cursor: pointer;
+  }
+  
+  .time-options option:hover {
+    background-color: #f0f0f0; /* Optional, adjust as needed */
+  }
+  
