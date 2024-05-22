@@ -11,13 +11,14 @@ body:
         This issue tracker is for reporting bugs found in [Earth Design System](https://earth.anywhere.co/)
         If you have a question about how to achieve something and are struggling, please post a question
         either of the way:
-          - Reach out to one of the team members in Anywhere chat
-          - Earth's [Anywhere collab](AW:MFE X EDS)
+          - Reach out to one of the team members in [Anywhereworks chat application](https://hub.anywhereworks.com/connect)
+          - Earth's [Anywhereworks collab](Eds Query Hub)
 
 
         Before submitting a new bug/issue, please check the links below to see if there is a solution or question posted there already:
          - EDS's [Issue's tab](https://github.com/nandhiniG/storybook-demo/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc)
          - EDS's [closed issues tab](https://github.com/nandhiniG/storybook-demo/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
+
 
         The more information you fill in, the better the team can help you.
   - type: input
@@ -38,17 +39,32 @@ body:
     validations:
       required: true
   - type: input
+    id: version
+    attributes:
+      label: Application or Brand Name
+      description: |
+        Please provide the microfrontend app name or the product name
+      placeholder: ex. Notifications || Reviews
+    validations:
+      required: true 
+  - type: dropdown
+    id: env_type
+    attributes:
+      label: Environment
+      description: Select the environment where the issue was observed.
+      options:
+        - "Prod"
+        - "Staging"
+        - "Dev"
+    validations:
+      required: true       
+  - type: input
     id: link
     attributes:
       label: Your App Url
-      description: |
-        Which website or app were you using when the bug happened?
-        Note:
-        - Your bug will may get fixed much faster if we can run your code and it doesn't have dependencies other than the `@nextui-org/react` npm package.
-        - To create a shareable code example you can use Stackblitz (https://stackblitz.com/). Please no localhost URLs.
-        - Please read these tips for providing a minimal example: https://stackoverflow.com/help/mcve.
+      description: Provide the application url to verify the bug 
       placeholder: |
-        e.g. https://stackblitz.com/edit/...... OR Github Repo
+        e.g. https://thinkmill.staging.setmore.com/beta
     validations:
       required: false
   - type: textarea
