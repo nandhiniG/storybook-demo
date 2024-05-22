@@ -39,7 +39,7 @@ body:
     validations:
       required: true
   - type: input
-    id: App Name
+    id: app_name
     attributes:
       label: Application or Brand Name
       description: |
