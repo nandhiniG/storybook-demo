@@ -1,5 +1,5 @@
 name: 'Bug report'
-title: "[BUG] - YOUR_ISSUE_TITLE_HERE_REPLACE_ME"
+title: "[ComponentName] YOUR_ISSUE_TITLE_HERE_REPLACE_ME"
 description: Tell us about a bug you may have identified in EDS
 labels: [bug,earth]
 body:
@@ -121,3 +121,11 @@ body:
         - "Other (add additonal context)"
     validations:
       required: true
+  - type: checkboxes
+    id: agrees-to-terms
+    attributes:
+      label: Terms 
+      description: By submitting this issue, you agree to verify that you have followed the requirements outlined above to the best of your ability.
+      options:
+        - label: I understand that if my bug cannot be reliable reproduced in a debuggable environment, it will probably not be fixed and this issue may even be closed.
+          required: true    
