@@ -1,6 +1,6 @@
 name: 'Bug report'
 title: "[BUG] - YOUR_ISSUE_TITLE_HERE_REPLACE_ME"
-description: Create a report to help us improve
+description: Tell us about a bug you may have identified in EDS
 labels: [bug,earth]
 body:
   - type: markdown
@@ -8,11 +8,11 @@ body:
       value: |
         Thank you for reporting an issue :pray:.
 
-        This issue tracker is for reporting bugs found in [Earth Design System](https://earth.anywhere.co/)
+        This issue tracker is for reporting reproducible bugs found in [Earth Design System](https://earth.anywhere.co/)
         If you have a question about how to achieve something and are struggling, please post a question
-        either of the way:
-          - Reach out to one of the team members in [Anywhereworks chat application](https://hub.anywhereworks.com/connect)
-          - Earth's [Anywhereworks collab](Eds Query Hub)
+        either of the [Anywhereworks channel](https://hub.anywhereworks.com/connect)
+          - Reach out to one of the team members
+          - Common Collab(Eds Query Hub)
 
 
         Before submitting a new bug/issue, please check the links below to see if there is a solution or question posted there already:
@@ -26,8 +26,8 @@ body:
     attributes:
       label: EDS Version
       description: |
-        Please provide the version of EDS package you are using.
-        You can find the version number in the package.json file.
+        - Please let us know the exact version of the EDS package that you were using when the issue occurred. If you are using an older version, check to see if your bug has already been solved in the latest version. 
+        - Please don't just put in "latest", as this is subject to change.
       placeholder: ex. 1.3.0
     validations:
       required: true
@@ -62,11 +62,11 @@ body:
     id: link
     attributes:
       label: Your App Url
-      description: Provide the application url to verify the bug 
+      description: Provide the deployed version of the application to verify the bug 
       placeholder: |
         e.g. https://thinkmill.staging.setmore.com/beta
     validations:
-      required: false
+      required: true
   - type: textarea
     id: steps
     attributes:
