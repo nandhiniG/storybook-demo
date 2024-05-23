@@ -1,7 +1,7 @@
 name: Docs feedback
 description: Improve documentation about Earth Design System.
 labels: ['status: waiting for maintainer', 'support: docs-feedback']
-title: '[docs] '
+title: '[DOCS][PAGE] YOUR_ISSUE_TITLE_HERE_REPLACE_ME'
 body:
   - type: markdown
     attributes:
