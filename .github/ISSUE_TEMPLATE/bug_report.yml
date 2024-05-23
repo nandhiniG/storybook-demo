@@ -1,7 +1,7 @@
 name: 'Bug report'
-title: "[BUG][ComponentName] YOUR_ISSUE_TITLE_HERE_REPLACE_ME"
+title: '[BUG]: [COMPONENT]: YOUR_ISSUE_TITLE_HERE_REPLACE_ME'
 description: Tell us about a bug you may have identified in EDS
-labels: [bug,earth,'status: Waiting For Maintainer']
+labels: [bug, earth, 'status: Waiting For Maintainer']
 body:
   - type: markdown
     attributes:
@@ -9,9 +9,9 @@ body:
         Thank you for reporting an issue :pray:.
 
         This issue tracker is for reporting reproducible bugs found in [Earth Design System](https://earth.anywhere.co/)
-        If you have a question about how to achieve something and are struggling, please post a question
-        either of the [Anywhereworks channel](https://hub.anywhereworks.com/connect)
-          - Reach out to one of the team members
+        If you have a question about how to achieve something and are struggling, please post a question with clear description 
+        of what help is required in either of the way
+          - Reach out to one of the core team members
           - Common Collab(Eds Query Hub)
 
 
@@ -21,6 +21,21 @@ body:
 
 
         The more information you fill in, the better the team can help you.
+
+        **Please select the package and specify the version:**
+
+  - type: dropdown
+    id: package
+    attributes:
+      label: EDS Package
+      description: Select the EDS package you are using.
+      options:
+        - 'core' # This will be the default selected option
+        - 'brands'
+        - 'translations'
+        - 'fonts'
+    validations:
+      required: true
   - type: input
     id: version
     attributes:
@@ -35,7 +50,9 @@ body:
     id: description
     attributes:
       label: Describe the bug
-      description: Provide a clear and concise description of the challenge you are running into.
+      description:
+        Provide a clear and concise description of the challenge you are running
+        into.
     validations:
       required: true
   - type: input
@@ -46,25 +63,27 @@ body:
         Please provide the microfrontend app name or the product name
       placeholder: ex. Notifications || Reviews
     validations:
-      required: true 
+      required: true
   - type: dropdown
     id: env_type
     attributes:
       label: Environment
       description: Select the environment where the issue was observed.
       options:
-        - "Prod"
-        - "Staging"
-        - "Dev"
+        - 'Prod'
+        - 'Staging'
+        - 'Dev'
     validations:
-      required: true       
+      required: true
   - type: input
     id: link
     attributes:
       label: Your App Url
-      description: Provide the deployed version of the application to verify the bug 
+      description:
+        Provide the deployed version of the application to verify the bug. In case of dev env , share the playroom snippet 
+        Note: Issue will be closed if playroom snippet attached for envs other than dev.
       placeholder: |
-        e.g. https://thinkmill.staging.setmore.com/beta
+        ex. https://thinkmill.staging.setmore.com/beta
     validations:
       required: true
   - type: textarea
@@ -83,7 +102,8 @@ body:
     id: expected
     attributes:
       label: Expected behavior
-      description: Provide a clear and concise description of what you expected to happen.
+      description:
+        Provide a clear and concise description of what you expected to happen.
       placeholder: |
         As a user, I expected ___ behavior but i am seeing ___
     validations:
@@ -104,28 +124,35 @@ body:
       label: Operating System Version
       description: What operating system are you using?
       placeholder: |
-        - OS: [e.g. macOS, Windows, Linux]
+        - OS: [ex. macOS, Windows, Linux]
     validations:
       required: true
   - type: dropdown
     id: browser_type
     attributes:
       label: Browser
-      description: Select the browsers where the issue can be reproduced (that you know of).
+      description:
+        Select the browsers where the issue can be reproduced (that you know
+        of).
       options:
-        - "Chrome"
-        - "Firefox"
-        - "Safari"
-        - "Edge"
-        - "Opera"
-        - "Other (add additonal context)"
+        - 'Chrome'
+        - 'Firefox'
+        - 'Safari'
+        - 'Edge'
+        - 'Opera'
+        - 'Other (add additonal context)'
     validations:
       required: true
   - type: checkboxes
     id: agrees-to-terms
     attributes:
-      label: Terms 
-      description: By submitting this issue, you agree to verify that you have followed the requirements outlined above to the best of your ability.
+      label: Terms
+      description:
+        By submitting this issue, you agree to verify that you have followed the
+        requirements outlined above to the best of your ability.
       options:
-        - label: I understand that if my bug cannot be reliable reproduced in a debuggable environment, it will probably not be fixed and this issue may even be closed.
-          required: true    
+        - label:
+            I understand that if my bug cannot be reliable reproduced in a
+            debuggable environment, it will probably not be fixed and this issue
+            may even be closed.
+          required: true

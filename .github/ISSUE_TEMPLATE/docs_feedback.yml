@@ -1,11 +1,13 @@
 name: Docs feedback
 description: Improve documentation about Earth Design System.
 labels: ['status: Waiting For Maintainer', 'support: docs-feedback']
-title: '[DOCS][PAGE] YOUR_ISSUE_TITLE_HERE_REPLACE_ME'
+title: '[DOCS]: [PAGE]: YOUR_ISSUE_TITLE_HERE_REPLACE_ME'
 body:
   - type: markdown
     attributes:
-      value: Thanks for contributing by creating an issue! ❤️ Please provide a searchable summary of the issue in the title above ⬆️.
+      value:
+        Thanks for contributing by creating an issue! ❤️ Please provide a
+        searchable summary of the issue in the title above ⬆️.
   - type: input
     id: page-url
     attributes:
@@ -33,4 +35,6 @@ body:
   - type: textarea
     attributes:
       label: Context
-      description: What are you trying to accomplish? Providing context helps us come up with a solution that is more useful in the real world.
+      description:
+        What are you trying to accomplish? Providing context helps us come up
+        with a solution that is more useful in the real world.
