@@ -81,7 +81,7 @@ body:
       label: Your App Url
       description:
         Provide the deployed version of the application to verify the bug. In case of dev env , share the playroom snippet 
-        Note: Issue will be closed if playroom snippet attached for envs other than dev.
+        Issue will be closed if playroom snippet attached for envs other than dev.
       placeholder: |
         ex. https://thinkmill.staging.setmore.com/beta
     validations:
