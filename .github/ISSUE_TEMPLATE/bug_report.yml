@@ -50,7 +50,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Describe the bug
+      label: Describe the Bug
       description:
         Provide a clear and concise description of the challenge you are running
         into.
@@ -60,8 +60,7 @@ body:
     id: app_name
     attributes:
       label: Application or Brand Name
-      description: |
-        Please provide the microfrontend app name or the product name
+      description: Please provide the microfrontend app name or the product name
       placeholder: ex. Notifications || Reviews
     validations:
       required: true
@@ -103,9 +102,8 @@ body:
   - type: textarea
     id: expected
     attributes:
-      label: Expected behavior
-      description:
-        Provide a clear and concise description of what you expected to happen.
+      label: Expected Behavior
+      description: Provide a clear and concise description of what you expected to happen.       
       placeholder: |
         As a user, I expected ___ behavior but i am seeing ___
     validations:
@@ -133,9 +131,7 @@ body:
     id: browser_type
     attributes:
       label: Browser
-      description:
-        Select the browsers where the issue can be reproduced (that you know
-        of).
+      description: Select the browsers where the issue can be reproduced (that you know of).        
       options:
         - 'Chrome'
         - 'Firefox'

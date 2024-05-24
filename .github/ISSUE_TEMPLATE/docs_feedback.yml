@@ -11,14 +11,14 @@ body:
   - type: input
     id: page-url
     attributes:
-      label: Related page
+      label: Related Page
       description: Which page of the documentation is this about?
       placeholder: https://earth.anywhere.co/components/button-link
     validations:
       required: true
   - type: dropdown
     attributes:
-      label: Kind of issue
+      label: Kind of Issue
       description: What kind of problem are you facing?
       options:
         - Unclear explanations
@@ -29,15 +29,14 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Issue description
-      description: |
-        Let us know what went wrong when you were using this documentation and what we could do to improve it.
+      label: Issue Description
+      description: Let us know what went wrong when you were using this documentation and what we could do to improve it.
     validations:
       required: true
   - type: textarea
     attributes:
       label: Context
-      description:
+      description: 
         What are you trying to accomplish? Providing context helps us come up
         with a solution that is more useful in the real world.
     validations:
