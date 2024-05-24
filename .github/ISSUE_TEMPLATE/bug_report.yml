@@ -17,8 +17,8 @@ body:
 
 
         Before submitting a new bug/issue, please check the links below to see if there is a solution or question posted there already:
-         - EDS's [Issue's tab](https://github.com/nandhiniG/storybook-demo/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc)
-         - EDS's [closed issues tab](https://github.com/nandhiniG/storybook-demo/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
+         - EDS's [Issue's tab](https://github.com/Adaptavant/awds/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aopen+label%3Aearth)
+         - EDS's [closed issues tab](https://github.com/Adaptavant/awds/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aopen+label%3Aearth)
 
 
         The more information you fill in, the better the team can help you.
@@ -81,8 +81,9 @@ body:
     attributes:
       label: Your App Url
       description:
-        Provide the deployed version of the application to verify the bug. In case of dev env , share the playroom snippet 
-        Issue will be closed if playroom snippet attached for envs other than dev.
+        Provide the deployed version of the application to verify the bug. In
+        case of dev env , share the playroom snippet Issue will be closed if
+        playroom snippet attached for envs other than dev.
       placeholder: |
         ex. https://thinkmill.staging.setmore.com/beta
     validations:

@@ -1,6 +1,6 @@
 name: Docs feedback
 description: Improve documentation about Earth Design System.
-labels: ['status: Waiting For Maintainer', 'support: docs-feedback']
+labels: ['earth', 'status: Waiting For Maintainer', 'support: docs-feedback']
 title: '[DOCS]: [PAGE]: YOUR_ISSUE_TITLE_HERE_REPLACE_ME'
 body:
   - type: markdown
@@ -33,7 +33,7 @@ body:
       description: |
         Let us know what went wrong when you were using this documentation and what we could do to improve it.
     validations:
-      required: true  
+      required: true
   - type: textarea
     attributes:
       label: Context
