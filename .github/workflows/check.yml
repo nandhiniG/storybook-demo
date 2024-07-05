@@ -1,0 +1,23 @@
+name: Auto-reply to issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  auto-reply:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Auto-reply to the issue creator
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        ISSUE_CREATOR=$(jq -r .issue.user.login "$GITHUB_EVENT_PATH")
+        ISSUE_NUMBER=$(jq -r .issue.number "$GITHUB_EVENT_PATH")
+        COMMENT_BODY="Hi @$ISSUE_CREATOR, thank you for opening this issue. Our team will look into it and respond within a day."
+
+        curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/${{ github.repository }}/issues/$ISSUE_NUMBER/comments \
+          -d "{\"body\": \"$COMMENT_BODY\"}"
