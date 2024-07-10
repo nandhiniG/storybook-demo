@@ -1,0 +1,64 @@
+name: Feature request
+title: "[Feature]: YOUR_FEATURE_TITLE_HERE_REPLACE_ME"
+description: Suggest a new idea or component for Earth Design System
+labels: ['status: feature request']
+body:
+  - type: markdown
+    attributes:
+      value: |
+      Thanks for contributing by creating an issue! ❤️ Please provide a searchable summary of the issue in the title above ⬆️.
+      This issue form is for requesting features only! For example, requesting a new component, behavior... etc
+      If you want to report a bug, please use the [bug report form](https://github.com/Adaptavant/awds/issues/new?assignees=&labels=bug%2Cearth%2Cstatus%3A+waiting+for+maintainer&projects=&template=bug_report.yml&title=%5BBUG%5D%3A+%5BCOMPONENT%5D%3A+YOUR_ISSUE_TITLE_HERE_REPLACE_ME).
+      and please use the [doc feedback form](https://github.com/Adaptavant/awds/issues/new?assignees=&labels=earth%2Cstatus%3A+waiting+for+maintainer%2Csupport%3A+docs-feedback&projects=&template=docs_feedback.yml&title=%5BDOCS%5D%3A+%5BPAGE%5D%3A+YOUR_ISSUE_TITLE_HERE_REPLACE_ME) to share feedbacks about Documentation.
+  - type: checkboxes
+    attributes:
+      description: |
+        Your issue may have already been reported! First search for duplicates among the [existing issues](https://github.com/Adaptavant/awds/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aopen+label%3Aearth).
+        We roll bug fixes, performance enhancements, and other improvements into new releases. Please test your expected behavior in latest version.
+      options:
+        - label: I've searched for existing issues and tested the latest version feature not available
+          required: true
+  
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature description
+      description: Tell us about your feature request, more importantly, what is the end user experience you are trying to build that led to the need for this feature?
+      placeholder: 'I think this feature would be great because...'
+      value: 'Describe your feature request...'
+    validations:
+      required: true
+
+  - type: input
+    id: components-affected
+    attributes:
+      label: Affected component/components
+      description: Is this feature request relevant to any of the already existing components? Ignore if not applicable.
+      placeholder: ex. Button, Checkbox...
+    validations:
+      required: false
+  
+  - type: textarea
+    id: expected-solution
+    attributes:
+      label: Describe the solution you'd like
+      description: Describe what you want to happen, how it should work and what are you trying to accomplish? Providing context helps us come up with a solution that is more useful in the real world.
+      placeholder: |
+        Describe how you propose to solve the problem and provide code samples of how the API would work once implemented
+  
+  - type: textarea
+    id: additional-reference
+    attributes:
+      label: Additional Context
+      description: Provide a link to the Design specification, other implementations, or screenshots of the expected behavior.
+      placeholder: |
+        You can drag your video or image files inside of this editor ↓
+  
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Before submitting
+      description: By submitting this issue, you agree to verify that you have followed the requirements outlined above to the best of your ability.
+      options:
+        - label: I've made research efforts and searched the documentation
+          required: true
