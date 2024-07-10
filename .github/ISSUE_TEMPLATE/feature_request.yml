@@ -14,7 +14,7 @@ body:
   - type: checkboxes
     attributes:
       description: |
-        Your issue may have already been reported! First search for duplicates among the [existing issues](https://github.com/Adaptavant/awds/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aopen+label%3Aearth).
+        Your issue may have already been reported! First search for duplicates among the [existing issues](https://github.com/Adaptavant/awds/issues?q=is%3Aissue).
         We roll bug fixes, performance enhancements, and other improvements into new releases. Please test your expected behavior in latest version.
       options:
         - label: I've searched for existing issues and tested the latest version feature not available
@@ -42,16 +42,16 @@ body:
   - type: textarea
     id: expected-solution
     attributes:
-      label: Describe the solution you'd like
-      description: Describe what you want to happen, how it should work and what are you trying to accomplish? Providing context helps us come up with a solution that is more useful in the real world.
+      label: Proposed solution
+      description: Describe your proposed solution, including how it should work and what you aim to accomplish. Providing context helps us develop a more practical solution.
       placeholder: |
-        Describe how you propose to solve the problem, reference to existing code on consumer side and provide code samples of how the API would work once implemented
+        Explain how you propose to solve the problem, reference any relevant code from your project, and provide code samples demonstrating how the API would work once implemented.
   
   - type: textarea
     id: additional-reference
     attributes:
       label: Additional information
-      description: Provide a link to the Design specification, other libraries references as examples of solution, or screenshots or videos of the expected behavior.
+      description: Provide a link to the Design specification, other libraries references as examples of solution, or screenshots and videos of the expected behavior.
       placeholder: |
         You can drag your video or image files inside of this editor ↓
   
