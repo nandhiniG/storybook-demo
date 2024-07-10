@@ -10,6 +10,7 @@ body:
       This issue form is for requesting features only! For example, requesting a new component, behavior... etc
       If you want to report a bug, please use the [bug report form](https://github.com/Adaptavant/awds/issues/new?assignees=&labels=bug%2Cearth%2Cstatus%3A+waiting+for+maintainer&projects=&template=bug_report.yml&title=%5BBUG%5D%3A+%5BCOMPONENT%5D%3A+YOUR_ISSUE_TITLE_HERE_REPLACE_ME).
       and please use the [doc feedback form](https://github.com/Adaptavant/awds/issues/new?assignees=&labels=earth%2Cstatus%3A+waiting+for+maintainer%2Csupport%3A+docs-feedback&projects=&template=docs_feedback.yml&title=%5BDOCS%5D%3A+%5BPAGE%5D%3A+YOUR_ISSUE_TITLE_HERE_REPLACE_ME) to share feedbacks about Documentation.
+  
   - type: checkboxes
     attributes:
       description: |
@@ -25,7 +26,7 @@ body:
       label: Feature description
       description: Tell us about your feature request, more importantly, what is the end user experience you are trying to build that led to the need for this feature?
       placeholder: 'I think this feature would be great because...'
-      value: 'Describe your feature request...'
+      value: 'Arguments why this change will be beneficial after adding to EDS'
     validations:
       required: true
 
@@ -44,13 +45,13 @@ body:
       label: Describe the solution you'd like
       description: Describe what you want to happen, how it should work and what are you trying to accomplish? Providing context helps us come up with a solution that is more useful in the real world.
       placeholder: |
-        Describe how you propose to solve the problem and provide code samples of how the API would work once implemented
+        Describe how you propose to solve the problem, reference to existing code on consumer side and provide code samples of how the API would work once implemented
   
   - type: textarea
     id: additional-reference
     attributes:
-      label: Additional Context
-      description: Provide a link to the Design specification, other implementations, or screenshots of the expected behavior.
+      label: Additional information
+      description: Provide a link to the Design specification, other libraries references as examples of solution, or screenshots or videos of the expected behavior.
       placeholder: |
         You can drag your video or image files inside of this editor ↓
   
