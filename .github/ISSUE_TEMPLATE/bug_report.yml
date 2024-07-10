@@ -87,6 +87,13 @@ body:
         ex. https://thinkmill.staging.setmore.com/beta
     validations:
       required: true
+  - type: markdown
+    attributes:
+      label: Prototype
+      description: If Your App Url, or playroom snippet is not possible to add, we encourage you to use "Prototype" app inside "awds" repo
+      placeholder: |
+        Add your code to the `apps/prototypes/src/pages/index.tsx` which is the Next Js starter kit.
+        This will help us to get the environment and steps that lead to the bug.
   - type: textarea
     id: steps
     attributes:
@@ -141,6 +148,19 @@ body:
         - 'Other (add additonal context)'
     validations:
       required: true
+  - type: dropdown
+      id: Priority
+      attributes:
+        label: Priority
+        description: Please let us know how critical this bug is to you. Your feedback helps us prioritize effectively.
+        options:
+            - 'Critical - Severely impacts all users'
+            - 'Highest - Blocks key functionality or major feature releases'
+            - 'High - Affects features; temporary workarounds is sufficient'
+            - 'Medium - Minor inconvenience or cosmetic issue'
+            - 'Low - Non-essential, but would be nice to fix'
+      validations:
+        required: true
   - type: checkboxes
     id: agrees-to-terms
     attributes:
