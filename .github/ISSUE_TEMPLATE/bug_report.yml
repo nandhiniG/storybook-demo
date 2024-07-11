@@ -88,12 +88,15 @@ body:
     validations:
       required: true
   - type: markdown
+    id: prototype-app-link
     attributes:
       label: Prototype
       description: If Your App Url, or playroom snippet is not possible to add, we encourage you to use "Prototype" app inside "awds" repo
       placeholder: |
-        Add your code to the `apps/prototypes/src/pages/index.tsx` which is the Next Js starter kit.
-        This will help us to get the environment and steps that lead to the bug.
+        Add your code to the `apps/prototypes/src/pages/index.tsx` which is the Next Js starter kit and share us the branch, tag or commit id.
+        You can run prototype locally by `pnpm dev:prototypes` command. This will help us to get the environment and steps that lead to the bug.
+      validations:
+        required: false
   - type: textarea
     id: steps
     attributes:
@@ -149,7 +152,7 @@ body:
     validations:
       required: true
   - type: dropdown
-      id: Priority
+      id: priority
       attributes:
         label: Priority
         description: Please let us know how critical this bug is to you. Your feedback helps us prioritize effectively.
