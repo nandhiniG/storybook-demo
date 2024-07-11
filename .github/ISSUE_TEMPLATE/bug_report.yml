@@ -152,17 +152,17 @@ body:
     validations:
       required: true
   - type: dropdown
-      id: priority
-      attributes:
-        label: Priority
-        description: Please let us know how critical this bug is to you. Your feedback helps us prioritize effectively.
-        options:
-            - 'Critical - Severely impacts all users'
-            - 'Highest - Blocks key functionality or major feature releases'
-            - 'High - Affects features; temporary workarounds is sufficient'
-            - 'Medium - Minor inconvenience or cosmetic issue'
-            - 'Low - Non-essential, but would be nice to fix'
-      validations:
+    id: priority
+    attributes:
+      label: Priority
+      description: Please let us know how critical this bug is to you. Your feedback helps us prioritize effectively.
+      options:
+          - 'Critical - Severely impacts all users'
+          - 'Highest - Blocks key functionality or major feature releases'
+          - 'High - Affects features; temporary workarounds is sufficient'
+          - 'Medium - Minor inconvenience or cosmetic issue'
+          - 'Low - Non-essential, but would be nice to fix'
+    validations:
         required: true
   - type: checkboxes
     id: agrees-to-terms

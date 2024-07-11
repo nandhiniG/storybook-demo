@@ -69,6 +69,8 @@ body:
           - 'High -  Affects features; temporary workarounds is sufficient'
           - 'Medium - Minor inconvenience or cosmetic feature'
           - 'Low - Non-essential, but would be nice to add'
+    validations:
+      required: true
 
   - type: checkboxes
     id: terms
