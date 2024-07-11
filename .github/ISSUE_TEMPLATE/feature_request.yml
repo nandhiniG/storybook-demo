@@ -7,24 +7,24 @@ body:
     attributes:
       value: |
         Thanks for contributing by creating an issue! ❤️ Please provide a searchable summary of the issue in the title above ⬆️.
-        This issue form is for requesting features only! For example, requesting a new component, behavior... etc
+        This issue form is for requesting features only! For example, requesting a new component, behavior, etc.
         If you want to report a bug, please use the [bug report form](https://github.com/Adaptavant/awds/issues/new?assignees=&labels=bug%2Cearth%2Cstatus%3A+waiting+for+maintainer&projects=&template=bug_report.yml&title=%5BBUG%5D%3A+%5BCOMPONENT%5D%3A+YOUR_ISSUE_TITLE_HERE_REPLACE_ME).
-        and please use the [doc feedback form](https://github.com/Adaptavant/awds/issues/new?assignees=&labels=earth%2Cstatus%3A+waiting+for+maintainer%2Csupport%3A+docs-feedback&projects=&template=docs_feedback.yml&title=%5BDOCS%5D%3A+%5BPAGE%5D%3A+YOUR_ISSUE_TITLE_HERE_REPLACE_ME) to share feedbacks about Documentation.
+        Please use the [doc feedback form](https://github.com/Adaptavant/awds/issues/new?assignees=&labels=earth%2Cstatus%3A+waiting+for+maintainer%2Csupport%3A+docs-feedback&projects=&template=docs_feedback.yml&title=%5BDOCS%5D%3A+%5BPAGE%5D%3A+YOUR_ISSUE_TITLE_HERE_REPLACE_ME) to share feedback about the documentation.
   
   - type: checkboxes
     attributes:
       description: |
-        Your issue may have already been reported! First search for duplicates among the [existing issues](https://github.com/Adaptavant/awds/issues?q=is%3Aissue).
-        We roll bug fixes, performance enhancements, and other improvements into new releases. Please test your expected behavior in latest version.
+        Your issue may have already been reported! First search for duplicates among the [existing issues](https://github.com/Adaptavant/awds/issues).
+        We roll bug fixes, performance enhancements, and other improvements into new releases. Please test your expected behavior in the latest version.
       options:
-        - label: I've searched for existing issues and tested the latest version feature not available
+        - label: I've searched for existing issues and tested the latest version; feature not available
           required: true
   
   - type: textarea
     id: feature-description
     attributes:
       label: Feature description
-      description: Tell us about your feature request, more importantly, what is the end user experience you are trying to build that led to the need for this feature?
+      description: Tell us about your feature request, more importantly, what is the end-user experience you are trying to build that led to the need for this feature?
       placeholder: 'I think this feature would be great because...'
       value: 'Arguments why this change will be beneficial after adding to EDS'
     validations:
@@ -53,7 +53,7 @@ body:
     id: additional-reference
     attributes:
       label: Additional information
-      description: Provide a link to the Design specification, other libraries references as examples of solution, or screenshots and videos of the expected behavior.
+      description: Provide a link to the Design specification, other libraries references as examples of the solution, or screenshots and videos of the expected behavior.
       placeholder: |
         You can drag your video or image files inside of this editor ↓
     validations:
@@ -65,10 +65,10 @@ body:
       label: Priority
       description: Please let us know how critical this feature is to you. Your feedback helps us prioritize effectively.
       options:
-          - 'Critical - Blocks key functionality or major feature releases'
-          - 'High -  Affects features; temporary workarounds is sufficient'
-          - 'Medium - Minor inconvenience or cosmetic feature'
-          - 'Low - Non-essential, but would be nice to add'
+        - 'Critical - Blocks key functionality or major feature releases'
+        - 'High - Affects features; temporary workaround is sufficient'
+        - 'Medium - Minor inconvenience or cosmetic feature'
+        - 'Low - Non-essential, but would be nice to add'
     validations:
       required: true
 
