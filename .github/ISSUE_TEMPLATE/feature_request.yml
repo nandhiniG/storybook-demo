@@ -8,57 +8,51 @@ body:
       value: |
         Thanks for contributing by creating an issue! ❤️ Please provide a searchable summary of the issue in the title above ⬆️.
         This issue form is for requesting features only! For example, requesting a new component, behavior, etc.
-        If you want to report a bug, please use the [bug report form](https://github.com/).
-        Please use the [doc feedback form](https://github.com/) to share feedback about the documentation.
-  
+        If you want to report a bug, please use the [bug report form](https://github.com/Adaptavant/awds/issues/new?assignees=&labels=bug%2Cearth%2Cstatus%3A+waiting+for+maintainer&projects=&template=bug_report.yml&title=%5BBUG%5D%3A+%5BCOMPONENT%5D%3A+YOUR_ISSUE_TITLE_HERE_REPLACE_ME).
+        Please use the [doc feedback form](https://github.com/Adaptavant/awds/issues/new?assignees=&labels=earth%2Cstatus%3A+waiting+for+maintainer%2Csupport%3A+docs-feedback&projects=&template=docs_feedback.yml&title=%5BDOCS%5D%3A+%5BPAGE%5D%3A+YOUR_ISSUE_TITLE_HERE_REPLACE_ME) to share feedback about the documentation.
   - type: checkboxes
+    id: duplicate-issue
     attributes:
+      label: Not Duplicate Request
       description: |
-        Your issue may have already been reported! First search for duplicates among the [existing issues](https://github.com/).
+        Your issue may have already been reported! First search for duplicates among the [existing issues](https://github.com/Adaptavant/awds/issues).
         We roll bug fixes, performance enhancements, and other improvements into new releases. Please test your expected behavior in the latest version.
       options:
         - label: I've searched for existing issues and tested the latest version; feature not available
           required: true
-  
   - type: textarea
     id: feature-description
     attributes:
-      label: Feature description
+      label: Feature Description
       description: Tell us about your feature request, more importantly, what is the end-user experience you are trying to build that led to the need for this feature?
       placeholder: 'I think this feature would be great because...'
       value: 'Arguments why this change will be beneficial after adding to EDS'
     validations:
       required: true
-
   - type: input
     id: components-affected
     attributes:
-      label: Affected component/components
+      label: Affected Component(s)
       description: Is this feature request relevant to any of the already existing components? Ignore if not applicable.
       placeholder: ex. Button, Checkbox...
-    validations:
-      required: false
-  
   - type: textarea
     id: expected-solution
     attributes:
-      label: Proposed solution
+      label: Proposed Solution
       description: Describe your proposed solution, including how it should work and what you aim to accomplish. Providing context helps us develop a more practical solution.
       placeholder: |
         Explain how you propose to solve the problem, reference any relevant code from your project, and provide code samples demonstrating how the API would work once implemented.
     validations:
       required: true
-  
   - type: textarea
     id: additional-reference
     attributes:
-      label: Additional information
+      label: Additional Information
       description: Provide a link to the Design specification, other libraries references as examples of the solution, or screenshots and videos of the expected behavior.
       placeholder: |
         You can drag your video or image files inside of this editor ↓
     validations:
       required: true
-
   - type: dropdown
     id: feature-priority
     attributes:
@@ -71,11 +65,10 @@ body:
         - 'Low - Non-essential, but would be nice to add'
     validations:
       required: true
-
   - type: checkboxes
     id: terms
     attributes:
-      label: Before submitting
+      label: Terms
       description: By submitting this issue, you agree to verify that you have followed the requirements outlined above to the best of your ability.
       options:
         - label: I've made research efforts and searched the documentation
