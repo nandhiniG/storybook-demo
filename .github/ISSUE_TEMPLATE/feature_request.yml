@@ -1,12 +1,12 @@
 name: Feature request
 title: "[Feature]: YOUR_FEATURE_TITLE_HERE_REPLACE_ME"
 description: Suggest a new idea or component for Earth Design System
-labels: ['status: feature request']
+labels: ['earth, feature request, status: waiting for maintainer']
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for contributing by creating an issue! ❤️ Please provide a searchable summary of the issue in the title above ⬆️.
+        ### Thanks for contributing by creating an issue! ❤️ Please provide a searchable summary of the issue in the title above ⬆️.
         This issue form is for requesting features only! For example, requesting a new component, behavior, etc.
         If you want to report a bug, please use the [bug report form](https://github.com/Adaptavant/awds/issues/new?assignees=&labels=bug%2Cearth%2Cstatus%3A+waiting+for+maintainer&projects=&template=bug_report.yml&title=%5BBUG%5D%3A+%5BCOMPONENT%5D%3A+YOUR_ISSUE_TITLE_HERE_REPLACE_ME).
         Please use the [doc feedback form](https://github.com/Adaptavant/awds/issues/new?assignees=&labels=earth%2Cstatus%3A+waiting+for+maintainer%2Csupport%3A+docs-feedback&projects=&template=docs_feedback.yml&title=%5BDOCS%5D%3A+%5BPAGE%5D%3A+YOUR_ISSUE_TITLE_HERE_REPLACE_ME) to share feedback about the documentation.
