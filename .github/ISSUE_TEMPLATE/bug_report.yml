@@ -13,7 +13,7 @@ body:
         of what help is required in either of the way
           - Reach out to one of the core team members
             @mateusz-kopec-anywhere @TajmulAnsary @thanix-k @nandhiniG
-          - Common Collab(Eds Query Hub) 
+          - Common Collab 
 
 
         Before submitting a new bug/issue, please check the links below to see if there is a solution or question posted there already:
@@ -42,8 +42,8 @@ body:
     attributes:
       label: EDS Version
       description: |
-        Please let us know the exact version of the EDS package that you were using when the issue occurred. If you are using an older version, check to see if your bug has already been solved in the latest version.
-        Please don't just put in "latest", as this is subject to change.
+        - Please let us know the exact version of the EDS package that you were using when the issue occurred. If you are using an older version, check to see if your bug has already been solved in the latest version. 
+        - Please don't just put in "latest", as this is subject to change.
       placeholder: ex. 1.3.0
     validations:
       required: true
@@ -51,14 +51,17 @@ body:
     id: description
     attributes:
       label: Describe the Bug
-      description: Provide a clear and concise description of the challenge you are running into.
+      description:
+        Provide a clear and concise description of the challenge you are running
+        into.
     validations:
       required: true
   - type: input
     id: app_name
     attributes:
       label: Application or Brand Name
-      description: Please provide the microfrontend app name or the product name.
+      description:
+        Please provide the microfrontend app name or the product name.
       placeholder: ex. Notifications || Reviews
     validations:
       required: true
@@ -109,7 +112,8 @@ body:
     id: expected
     attributes:
       label: Expected Behavior
-      description: Provide a clear and concise description of what you expected to happen.       
+      description:
+        Provide a clear and concise description of what you expected to happen.
       placeholder: |
         As a user, I expected ___ behavior but i am seeing ___
     validations:
@@ -137,7 +141,9 @@ body:
     id: browser_type
     attributes:
       label: Browser
-      description: Select the browsers where the issue can be reproduced (that you know of).        
+      description:
+        Select the browsers where the issue can be reproduced (that you know
+        of).
       options:
         - 'Chrome'
         - 'Firefox'
@@ -151,20 +157,27 @@ body:
     id: priority
     attributes:
       label: Priority
-      description: Please let us know how critical this bug is to you. Your feedback helps us prioritize effectively.
+      description:
+        Please let us know how critical this bug is to you. Your feedback helps
+        us prioritize effectively.
       options:
-        - 'Critical - Severely impacts all users'
-        - 'Highest - Blocks key functionality or major feature releases'
-        - 'High - Affects features; temporary workaround is sufficient'
-        - 'Medium - Minor inconvenience or cosmetic issue'
-        - 'Low - Non-essential, but would be nice to fix'
+        - '⛔️ Critical - Severely impacts all users'
+        - '🔴 Highest - Blocks key functionality or major feature releases'
+        - '🟠 High - Affects features; temporary workaround is sufficient'
+        - '🟡 Medium - Minor inconvenience or cosmetic issue'
+        - '🔵 Low - Non-essential, but would be nice to fix'
     validations:
       required: true
   - type: checkboxes
     id: agrees-to-terms
     attributes:
       label: Terms
-      description: By submitting this issue, you agree to verify that you have followed the requirements outlined above to the best of your ability.
+      description:
+        By submitting this issue, you agree to verify that you have followed the
+        requirements outlined above to the best of your ability.
       options:
-        - label: I understand that if my bug cannot be reliably reproduced in a debuggable environment, it will probably not be fixed and this issue may even be closed.
+        - label:
+            I understand that if my bug cannot be reliably reproduced in a
+            debuggable environment, it will probably not be fixed and this issue
+            may even be closed.
           required: true
