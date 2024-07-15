@@ -1,0 +1,23 @@
+name: Auto Comment on New Issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  auto-comment:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Add Comment
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ISSUE_NUMBER: ${{ github.event.issue.number }}
+        REPO_OWNER: ${{ github.repository_owner }}
+        REPO_NAME: ${{ github.event.repository.name }}
+      run: |
+        curl -s -H "Authorization: token $GITHUB_TOKEN" \
+             -H "Content-Type: application/json" \
+             -X POST \
+             -d '{"body": "Thanks for opening this issue! We will look into it as soon as possible. If you have any additional information, please provide it here."}' \
+             "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/issues/$ISSUE_NUMBER/comments"
