@@ -11,12 +11,12 @@ jobs:
     steps:
     - name: Add Comment
       env:
-        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
         ISSUE_NUMBER: ${{ github.event.issue.number }}
         REPO_OWNER: ${{ github.repository_owner }}
         REPO_NAME: ${{ github.event.repository.name }}
       run: |
-        curl -s -H "Authorization: token $ACCESS_TOKEN" \
+        curl -s -H "Authorization: token $ACTION_TOKEN" \
              -H "Content-Type: application/json" \
              -X POST \
              -d '{"body": "Thanks for opening this issue! We will look into it as soon as possible. If you have any additional information, please provide it here."}' \
