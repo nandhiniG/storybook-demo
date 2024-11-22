@@ -9,7 +9,7 @@ interface TimePickerProps {
 const TimePickerComponent: React.FC<TimePickerProps> = ({ onChange }) => {
   const [selectedTime, setSelectedTime] = useState<Date | null>(new Date());
 
-  const handleTimeChange = (newTime: Date | null) => {
+  const handleTimeChange = (newTime: any) => {
     setSelectedTime(newTime ? new Date(newTime) : null); // Parse newTime string to Date object
     if (newTime) {
       // Convert the selected time to IST time zone
