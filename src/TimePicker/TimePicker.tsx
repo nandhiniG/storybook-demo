@@ -2,6 +2,7 @@ import React, { useState, useRef, useMemo, useEffect } from 'react';
 import './TimePicker.css'; // Import CSS file for styling
 import { format, parse } from 'date-fns';
 import { useClickOutsideListener } from './hooks';
+import { validateTimeFormat} from './helper'
 
 interface TimePickerProps {
   id: string;
@@ -44,16 +45,32 @@ const TimePicker: React.FC<TimePickerProps> = ({ timeFormat, variant, onChange }
 
   const times = useMemo(() => generateTimes(), []); // Generate times array once
   const options = renderTimeOptions(times, timeFormat, selectedTime); // Pass selectedTime to renderTimeOptions
+  const formatString = timeFormat=== '12' ? 'h:mm a': 'h:mm'
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log("inside change")
     setInputValue(event.target.value);
+ 
   };
+
+  const handleOnBlur = (event: React.FocusEvent<HTMLInputElement>) => {
+    if(event.target.value !== inputValue) {
+      event.stopPropagation();
+    console.log("inside blur")
+    console.log(event.target.value);
+    console.log(inputValue);
+    }
+    
+    //const validTime = validateTimeFormat(inputValue, formatString)
+    
+  }
 
   const handleInputFocus = () => {
     setIsPopoverOpen(true);
   };
 
   const handleTimeSelection = (time: string) => {
+    console.log("select onchange");
     setInputValue(time);
     setSelectedTime(time); // Update selected time
     setIsPopoverOpen(false);
@@ -78,6 +95,7 @@ const TimePicker: React.FC<TimePickerProps> = ({ timeFormat, variant, onChange }
         value={inputValue}
         onChange={handleInputChange}
         onFocus={handleInputFocus}
+        onBlur={handleOnBlur}
         placeholder={timeFormat === '12' ? '10:00 AM' : '10:00'}
       />
       {isPopoverOpen && (
