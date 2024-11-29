@@ -64,6 +64,7 @@ const TimePicker: React.FC<TimePickerProps> = ({ timeFormat, variant, onChange }
 
   const handlePopoverClose = () => {
     setIsPopoverOpen(false);
+    console.log("test")
   };
 
   useClickOutsideListener(timePickerRef,handlePopoverClose);
