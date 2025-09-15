@@ -19,3 +19,4 @@ export const useClickOutsideListener = (ref: RefObject<HTMLElement>, callback: (
 };
 
 // Define more custom hooks as needed...
+// Added sample docs
